@@ -25,6 +25,7 @@
 - [Stackoverflow](stackoverflow.com)
 - [stackexchange](softwareengineering.stackexchange.com)
 - [Alex Lee (YouTube)](https://www.youtube.com/@alexlorenlee)
+- [w3Schools](www.w3schools.com)
 
 # Future Work
 
