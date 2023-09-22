@@ -1,7 +1,7 @@
 public class BoardAddress {
-    private static String _id;
-    private static char _shownValue;
-    private static Boolean _isPlayed;
+    private String _id;
+    private char _shownValue;
+    private Boolean _isPlayed;
 
     public BoardAddress(String id)
     {

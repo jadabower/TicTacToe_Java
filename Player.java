@@ -1,9 +1,9 @@
 import java.util.ArrayList;
 
 public class Player {
-    private static char _playerSymbol;
-    private static Boolean _hasWon;
-    private static ArrayList<String> _addressesPlayedByPlayer = new ArrayList<>();
+    private char _playerSymbol;
+    private Boolean _hasWon;
+    private ArrayList<String> _addressesPlayedByPlayer = new ArrayList<>();
 
     public Player(char playerSymbol)
     {
@@ -11,7 +11,7 @@ public class Player {
         _hasWon = false;
     }
 
-    public static char GetPlayerSymbol()
+    public char GetPlayerSymbol()
     {
         return _playerSymbol;
     }

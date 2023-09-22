@@ -2,16 +2,16 @@
 // import java.util.List;
 
 public class GameBoard {
-    private static BoardAddress _a1;
-    private static BoardAddress _b1;
-    private static BoardAddress _c1;
-    private static BoardAddress _a2;
-    private static BoardAddress _b2;
-    private static BoardAddress _c2;
-    private static BoardAddress _a3;
-    private static BoardAddress _b3;
-    private static BoardAddress _c3;
-    private static BoardAddress[] _addresses = new BoardAddress[9];
+    private BoardAddress _a1;
+    private BoardAddress _b1;
+    private BoardAddress _c1;
+    private BoardAddress _a2;
+    private BoardAddress _b2;
+    private BoardAddress _c2;
+    private BoardAddress _a3;
+    private BoardAddress _b3;
+    private BoardAddress _c3;
+    private BoardAddress[] _addresses = new BoardAddress[9];
     
     public GameBoard(BoardAddress a1, BoardAddress b1, BoardAddress c1, BoardAddress a2, BoardAddress b2, BoardAddress c2, BoardAddress a3, BoardAddress b3, BoardAddress c3)
     {
@@ -35,13 +35,13 @@ public class GameBoard {
         _addresses[8] = c3;
     }
 
-    public static void PrintCurrentGameBoard()
+    public void PrintCurrentGameBoard()
     {
         System.out.println("  A   B   C  ");
         System.out.println("1" + " " + _a1.GetShownValue() + " | " + _b1.GetShownValue() + " | " + _c1.GetShownValue() + " ");
-        System.out.println(" ---+---+---");
+        System.out.println(" ---+---+--- ");
         System.out.println("2" + " " + _a2.GetShownValue() + " | " + _b2.GetShownValue() + " | " + _c2.GetShownValue() + " ");
-        System.out.println(" ---+---+---");
+        System.out.println(" ---+---+--- ");
         System.out.println("3" + " " + _a3.GetShownValue() + " | " + _b3.GetShownValue() + " | " + _c3.GetShownValue() + " ");
     }
 
