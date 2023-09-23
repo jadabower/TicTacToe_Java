@@ -1,4 +1,5 @@
 import java.util.ArrayList;
+import java.util.Scanner;
 
 public class Player {
     private char _playerSymbol;
@@ -20,6 +21,14 @@ public class Player {
     {
         address.ChangeAddressValuesWhenPlayed(_playerSymbol);
         _addressesPlayedByPlayer.add(address.GetID());
+    }
+
+    public String GetInputFromUser()
+    {
+        Scanner sc = new Scanner(System.in);  //System.in is a standard input stream  
+        System.out.print("Where would you like to play? ");  
+        String str = sc.next();   //reads string before the space  
+        return str;
     }
 
     public Boolean CheckIfWon()

@@ -49,7 +49,7 @@ public class GameBoard {
     {
         for (BoardAddress address : _addresses) 
         {
-            if (address.GetID() == id)
+            if (address.GetID().equals(id))
             {
                 return address;
             }

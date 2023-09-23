@@ -29,6 +29,8 @@
 - [colored text (geeksforgeeks)](https://www.geeksforgeeks.org/how-to-print-colored-text-in-java-console/)
 - [freecodecamp](https://www.freecodecamp.org/news/java-static-keyword-explained/#:~:text=What%20does%20static%20mean%3F,be%20shared%20by%20all%20objects.)
 - [java input (javatpoint)](https://www.javatpoint.com/how-to-take-string-input-in-java#:~:text=Java%20nextLine()%20method,cursor%20to%20the%20next%20line.)
+- [try catch statements (w3schools)](https://www.w3schools.com/java/java_try_catch.asp)
+
 # Future Work
 
 {Make a list of things that you need to fix, improve, and add in the future.}
