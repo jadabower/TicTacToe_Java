@@ -13,26 +13,26 @@ public class GameBoard {
     private BoardAddress _c3;
     private BoardAddress[] _addresses = new BoardAddress[9];
     
-    public GameBoard(BoardAddress a1, BoardAddress b1, BoardAddress c1, BoardAddress a2, BoardAddress b2, BoardAddress c2, BoardAddress a3, BoardAddress b3, BoardAddress c3)
+    public GameBoard()
     {
-        _a1 = a1;
-        _b1 = b1;
-        _c1 = c1;
-        _a2 = a2;
-        _b2 = b2;
-        _c2 = c2;
-        _a3 = a3;
-        _b3 = b3;
-        _c3 = c3;
-        _addresses[0] = a1;
-        _addresses[1] = b1;
-        _addresses[2] = c1;
-        _addresses[3] = a2;
-        _addresses[4] = b2;
-        _addresses[5] = c2;
-        _addresses[6] = a3;
-        _addresses[7] = b3;
-        _addresses[8] = c3;
+        _a1 = new BoardAddress("a1");
+        _b1 = new BoardAddress("b1");
+        _c1 = new BoardAddress("c1");
+        _a2 = new BoardAddress("a2");
+        _b2 = new BoardAddress("b2");
+        _c2 = new BoardAddress("c2");
+        _a3 = new BoardAddress("a3");
+        _b3 = new BoardAddress("b3");
+        _c3 = new BoardAddress("c3");
+        _addresses[0] = _a1;
+        _addresses[1] = _b1;
+        _addresses[2] = _c1;
+        _addresses[3] = _a2;
+        _addresses[4] = _b2;
+        _addresses[5] = _c2;
+        _addresses[6] = _a3;
+        _addresses[7] = _b3;
+        _addresses[8] = _c3;
     }
 
     public void PrintCurrentGameBoard()
@@ -55,5 +55,17 @@ public class GameBoard {
             }
         }
         return null;
+    }
+
+    public Boolean GetIfAddressIsValid(String id)
+    {
+        for (BoardAddress boardAddress : _addresses) 
+        {
+            if (boardAddress.GetID().equals(id))
+            {
+                return true;
+            }
+        }
+        return false;
     }
 }

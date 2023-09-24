@@ -17,9 +17,6 @@
 {Describe the programming language that you used and any libraries.}
 
 # Useful Websites
-
-{Make a list of websites that you found helpful in this project}
-
 - [Oracle](https://www.oracle.com/java/technologies/downloads/)
 - [geeksforgeeks](www.geeksforgeeks.org)
 - [Stackoverflow](stackoverflow.com)
@@ -32,9 +29,8 @@
 - [try catch statements (w3schools)](https://www.w3schools.com/java/java_try_catch.asp)
 
 # Future Work
-
-{Make a list of things that you need to fix, improve, and add in the future.}
-
-- Item 1
-- Item 2
-- Item 3
+- Change it so they can input "A1" or "1A"
+- Add color (green?) to the line that wins (possibly by changing the ID string in the BoardAddress)
+- Give each player a color as well (red/blue?)
+- Center the items in the terminal
+- Possibly clear the terminal with each new turn
