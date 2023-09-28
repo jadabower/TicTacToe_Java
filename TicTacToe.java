@@ -25,7 +25,7 @@ public class TicTacToe {
                 turnCount ++;
                 // prints that it's player 1's turn and the current game board
                 System.out.println("----------------------------------------");
-                System.out.println(blueText + "Player 1" + resetColor + "'s Turn");
+                System.out.println(blueText + "Player 1" + resetColor + "'s turn");
                 board.PrintCurrentGameBoard();
                 // gets an address from the user where they want to play
                 String addressAsString = player1.GetInputFromUser().toLowerCase();
@@ -69,7 +69,7 @@ public class TicTacToe {
                 turnCount ++;
                 // prints that it's player 2's turn and the current game board
                 System.out.println("----------------------------------------");
-                System.out.println(redText + "Player 2" + resetColor + "'s Turn");
+                System.out.println(redText + "Player 2" + resetColor + "'s turn");
                 board.PrintCurrentGameBoard();
                 // gets an address from the user where they want to play
                 String addressAsString = player2.GetInputFromUser().toLowerCase();
