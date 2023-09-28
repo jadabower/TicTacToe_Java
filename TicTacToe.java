@@ -23,8 +23,16 @@ public class TicTacToe {
                 String addressAsString = player1.GetInputFromUser().toLowerCase();
                 while ((player1.HasPlayedHere(addressAsString) || player2.HasPlayedHere(addressAsString)) || !board.GetIfAddressIsValid(addressAsString))
                 {
-                    System.out.println("Please enter an empty board address.");
-                    addressAsString = player1.GetInputFromUser().toLowerCase();
+                    char firstChar = addressAsString.charAt(0);
+                    if (Character.isDigit(firstChar))
+                    { 
+                        addressAsString = Character.toString(addressAsString.charAt(1)) + Character.toString(firstChar);
+                    }
+                    if ((player1.HasPlayedHere(addressAsString) || player2.HasPlayedHere(addressAsString)) || !board.GetIfAddressIsValid(addressAsString))
+                    {
+                        System.out.println("Please enter an empty board address.");
+                        addressAsString = player1.GetInputFromUser().toLowerCase();
+                    }
                 }
                 player1.MakePlay(board.GetBoardAddressFromID(addressAsString));
                 if (player1.CheckIfWon(board))
@@ -51,8 +59,16 @@ public class TicTacToe {
                 String addressAsString = player2.GetInputFromUser().toLowerCase();
                 while ((player1.HasPlayedHere(addressAsString) || player2.HasPlayedHere(addressAsString)) || !board.GetIfAddressIsValid(addressAsString))
                 {
-                    System.out.println("Please enter an empty board address.");
-                    addressAsString = player2.GetInputFromUser().toLowerCase();
+                    char firstChar = addressAsString.charAt(0);
+                    if (Character.isDigit(firstChar))
+                    { 
+                        addressAsString = Character.toString(addressAsString.charAt(1)) + Character.toString(firstChar);
+                    }
+                    if ((player1.HasPlayedHere(addressAsString) || player2.HasPlayedHere(addressAsString)) || !board.GetIfAddressIsValid(addressAsString))
+                    {
+                        System.out.println("Please enter an empty board address.");
+                        addressAsString = player1.GetInputFromUser().toLowerCase();
+                    }
                 }
                 player2.MakePlay(board.GetBoardAddressFromID(addressAsString));
                 if (player2.CheckIfWon(board))
