@@ -1,20 +1,16 @@
 # Overview
 
-{Important! Do not say in this section that this is college assignment. Talk about what you are trying to accomplish as a software engineer to further your learning.}
+This is a classic Tic-Tac-Toe game. There are two players (player 1 plays blue X's and player 2 plays red O's). The goal of the game is to get 3 of your symbol in a row (horizontally, vertically, or diagonally). If a player wins, the winning 3 symbols turn green and are shown with a message saying who won and how many turns it took for them to win. To make a play, the player will type a board address when prompted (For example, to play in the first column, first row, the player would type one of the following: "A1", "1A", "a1", or "1a"). The corresponding spot on the board is then replaced with that player's symbol ('X' or 'O') in their color (blue or red) and cannot be played on again in the game. The game continues until either player has won or the whole board is filled in and neither player has won (a tie). 
 
-{Provide a description of the software that you wrote to demonstrate the Java language.}
-
-{Describe your purpose for writing this software.}
-
-{Provide a link to your YouTube demonstration. It should be a 4-5 minute demo of the software running and a walkthrough of the code. Focus should be on sharing what you learned about the language syntax.}
+I made this program as a fun project to help me learn the Java language (both syntax and style). My idea with this is that I would make a very simple game so that the focus was on the Java language and syntax rather than the logic behind the game itself. I tried to make this very simple game very basic, and then whenever I thought of something that could improve the play-ability or visual aspect of the game, I would add that feature. That way, the game was playable very early on, and simply got better as I updated it more.
 
 [Software Demo Video](http://youtube.link.goes.here)
 
 # Development Environment
 
-Language: Java version 8
-IDE: Visual Studio Code. 
-Source Control: Git (Github)
+- Language: Java version 8
+- IDE: Visual Studio Code
+- Source Control: Git (Github)
 
 
 # Useful Websites
@@ -32,3 +28,4 @@ Source Control: Git (Github)
 
 # Future Work
 - Center the items in the terminal
+- Possible 1-player version
