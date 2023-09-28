@@ -28,6 +28,7 @@ Source Control: Git (Github)
 - [freecodecamp](https://www.freecodecamp.org/news/java-static-keyword-explained/#:~:text=What%20does%20static%20mean%3F,be%20shared%20by%20all%20objects.)
 - [java input (javatpoint)](https://www.javatpoint.com/how-to-take-string-input-in-java#:~:text=Java%20nextLine()%20method,cursor%20to%20the%20next%20line.)
 - [getting if char is numeric (tutorialspoint)](https://www.tutorialspoint.com/how-to-check-if-a-given-character-is-a-number-letter-in-java)
+- [clearing terminal (replit)](https://replit.com/talk/ask/How-do-you-clear-terminal-in-Java/46341)
 
 # Future Work
 - Center the items in the terminal

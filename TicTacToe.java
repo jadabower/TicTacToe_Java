@@ -23,8 +23,9 @@ public class TicTacToe {
             {
                 // increments the turn counter
                 turnCount ++;
+                // clears the terminal
+                System.out.print("\033[H\033[2J");
                 // prints that it's player 1's turn and the current game board
-                System.out.println("----------------------------------------");
                 System.out.println(blueText + "Player 1" + resetColor + "'s turn");
                 board.PrintCurrentGameBoard();
                 // gets an address from the user where they want to play
@@ -48,18 +49,18 @@ public class TicTacToe {
                 // prints player 1 winning message and board
                 if (player1.CheckIfWon(board))
                 {
-                    System.out.println("----------------------------------------");
+                    // clears the terminal
+                    System.out.print("\033[H\033[2J");
                     System.out.println(blueText + "Player 1" + resetColor + " won in " + turnCount + " turns!");
                     board.PrintCurrentGameBoard();
-                    System.out.println("----------------------------------------");
                 }
                 // prints tie message and board
                 else if (player1.GetNumberOfPlaysMade() + player2.GetNumberOfPlaysMade() == 9)
                 {
-                    System.out.println("----------------------------------------");
+                    // clears the terminal
+                    System.out.print("\033[H\033[2J");
                     System.out.println("It's a tie!");
                     board.PrintCurrentGameBoard();
-                    System.out.println("----------------------------------------");
                 }
             }
             // player 2's turn
@@ -67,8 +68,9 @@ public class TicTacToe {
             {
                 // increments the turn counter
                 turnCount ++;
+                // clears the terminal
+                System.out.print("\033[H\033[2J");
                 // prints that it's player 2's turn and the current game board
-                System.out.println("----------------------------------------");
                 System.out.println(redText + "Player 2" + resetColor + "'s turn");
                 board.PrintCurrentGameBoard();
                 // gets an address from the user where they want to play
@@ -92,18 +94,18 @@ public class TicTacToe {
                 // prints player 2 winning message and board
                 if (player2.CheckIfWon(board))
                 {
-                    System.out.println("----------------------------------------");
+                    // clears the terminal
+                    System.out.print("\033[H\033[2J");
                     System.out.println(redText + "Player 2" + resetColor + " won in " + turnCount + " turns!");
                     board.PrintCurrentGameBoard();
-                    System.out.println("----------------------------------------");
                 }
                 // prints tie message and board
                 else if (player1.GetNumberOfPlaysMade() + player2.GetNumberOfPlaysMade() == 9)
                 {
-                    System.out.println("----------------------------------------");
+                    // clears the terminal
+                    System.out.print("\033[H\033[2J");
                     System.out.println("It's a tie!");
                     board.PrintCurrentGameBoard();
-                    System.out.println("----------------------------------------");
                 }
             }
         }
