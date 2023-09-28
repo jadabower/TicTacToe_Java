@@ -38,12 +38,14 @@ public class GameBoard {
     // prints the game board to the screen with the current shown values of each of the addresses
     public void PrintCurrentGameBoard()
     {
+        System.out.println();
         System.out.println("  A   B   C  ");
         System.out.println("1" + " " + _a1.GetShownValue() + " | " + _b1.GetShownValue() + " | " + _c1.GetShownValue() + " ");
         System.out.println(" ---+---+--- ");
         System.out.println("2" + " " + _a2.GetShownValue() + " | " + _b2.GetShownValue() + " | " + _c2.GetShownValue() + " ");
         System.out.println(" ---+---+--- ");
         System.out.println("3" + " " + _a3.GetShownValue() + " | " + _b3.GetShownValue() + " | " + _c3.GetShownValue() + " ");
+        System.out.println();
     }
 
     // takes in an id and returns the address with that id
