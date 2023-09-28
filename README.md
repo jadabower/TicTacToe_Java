@@ -4,7 +4,7 @@ This is a classic Tic-Tac-Toe game. There are two players (player 1 plays blue X
 
 I made this program as a fun project to help me learn the Java language (both syntax and style). My idea with this is that I would make a very simple game so that the focus was on the Java language and syntax rather than the logic behind the game itself. I tried to make this very simple game very basic, and then whenever I thought of something that could improve the play-ability or visual aspect of the game, I would add that feature. That way, the game was playable very early on, and simply got better as I updated it more.
 
-[Software Demo Video](http://youtube.link.goes.here)
+[Software Demo Video](https://youtu.be/2zomrhdus7Y)
 
 # Development Environment
 
