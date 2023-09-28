@@ -6,6 +6,7 @@ I made this program as a fun project to help me learn the Java language (both sy
 
 [Software Demo Video](https://youtu.be/2zomrhdus7Y)
 
+
 # Development Environment
 
 - Language: Java version 8
@@ -14,6 +15,7 @@ I made this program as a fun project to help me learn the Java language (both sy
 
 
 # Useful Websites
+
 - [Oracle](https://www.oracle.com/java/technologies/downloads/)
 - [geeksforgeeks](www.geeksforgeeks.org)
 - [Stackoverflow](stackoverflow.com)
@@ -27,5 +29,6 @@ I made this program as a fun project to help me learn the Java language (both sy
 - [clearing terminal (replit)](https://replit.com/talk/ask/How-do-you-clear-terminal-in-Java/46341)
 
 # Future Work
+
 - Center the items in the terminal
 - Possible 1-player version
