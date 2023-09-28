@@ -32,4 +32,3 @@ Source Control: Git (Github)
 
 # Future Work
 - Center the items in the terminal
-- Possibly clear the terminal with each new turn
