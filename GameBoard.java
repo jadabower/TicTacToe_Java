@@ -1,7 +1,5 @@
-// import java.util.ArrayList;
-// import java.util.List;
-
 public class GameBoard {
+    // private versions of the board addresses
     private BoardAddress _a1;
     private BoardAddress _b1;
     private BoardAddress _c1;
@@ -11,8 +9,10 @@ public class GameBoard {
     private BoardAddress _a3;
     private BoardAddress _b3;
     private BoardAddress _c3;
+    // list of all of the addresses
     private BoardAddress[] _addresses = new BoardAddress[9];
     
+    // constructor
     public GameBoard()
     {
         _a1 = new BoardAddress("a1");
@@ -35,6 +35,7 @@ public class GameBoard {
         _addresses[8] = _c3;
     }
 
+    // prints the game board to the screen with the current shown values of each of the addresses
     public void PrintCurrentGameBoard()
     {
         System.out.println("  A   B   C  ");
@@ -45,6 +46,7 @@ public class GameBoard {
         System.out.println("3" + " " + _a3.GetShownValue() + " | " + _b3.GetShownValue() + " | " + _c3.GetShownValue() + " ");
     }
 
+    // takes in an id and returns the address with that id
     public BoardAddress GetBoardAddressFromID(String id)
     {
         for (BoardAddress address : _addresses) 
@@ -57,12 +59,14 @@ public class GameBoard {
         return null;
     }
 
+    // changes the shown value of an address from an id and for a specific player
     public void ChangeShownFromID(String id, String color, char playerSymbol)
     {
         BoardAddress address = GetBoardAddressFromID(id);
         address.ChangeShown(playerSymbol, color);
     }
 
+    // checks if a given id is related to a valid address
     public Boolean GetIfAddressIsValid(String id)
     {
         for (BoardAddress boardAddress : _addresses) 

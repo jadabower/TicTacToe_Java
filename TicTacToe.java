@@ -1,26 +1,35 @@
-// import java.util.Scanner;
-import java.io.*;
-
 public class TicTacToe {
     public static void main(String args[])
 	{
+        // String to change the following printed statements back to default
         String resetColor = "\u001B[0m";
+        // String to change the following printed statements to blue
         String blueText = "\u001B[34m";
+        // String to change the following printed statements to red
         String redText = "\u001B[31m";
+        // creates two Players
         Player player1 = new Player('X', blueText);
         Player player2 = new Player('O', redText);
+        // creates a GameBoard
         GameBoard board = new GameBoard();
+        // int to keep track of how many turns have been played
         int turnCount = 0;
 
+        // runs the game while it should still be running
         while((player1.CheckIfWon(board) == false) && (player2.CheckIfWon(board) == false) && (player1.GetNumberOfPlaysMade() + player2.GetNumberOfPlaysMade() != 9))
         {
+            // player 1's turn
             if((turnCount % 2) == 0)
             {
+                // increments the turn counter
                 turnCount ++;
+                // prints that it's player 1's turn and the current game board
                 System.out.println("----------------------------------------");
                 System.out.println(blueText + "Player 1" + resetColor + "'s Turn");
                 board.PrintCurrentGameBoard();
+                // gets an address from the user where they want to play
                 String addressAsString = player1.GetInputFromUser().toLowerCase();
+                // handles invalid addresses entered
                 while ((player1.HasPlayedHere(addressAsString) || player2.HasPlayedHere(addressAsString)) || !board.GetIfAddressIsValid(addressAsString))
                 {
                     char firstChar = addressAsString.charAt(0);
@@ -34,7 +43,9 @@ public class TicTacToe {
                         addressAsString = player1.GetInputFromUser().toLowerCase();
                     }
                 }
+                // makes player 1 play at the address entered
                 player1.MakePlay(board.GetBoardAddressFromID(addressAsString));
+                // prints player 1 winning message and board
                 if (player1.CheckIfWon(board))
                 {
                     System.out.println("----------------------------------------");
@@ -42,6 +53,7 @@ public class TicTacToe {
                     board.PrintCurrentGameBoard();
                     System.out.println("----------------------------------------");
                 }
+                // prints tie message and board
                 else if (player1.GetNumberOfPlaysMade() + player2.GetNumberOfPlaysMade() == 9)
                 {
                     System.out.println("----------------------------------------");
@@ -50,13 +62,18 @@ public class TicTacToe {
                     System.out.println("----------------------------------------");
                 }
             }
+            // player 2's turn
             else
             {
+                // increments the turn counter
                 turnCount ++;
+                // prints that it's player 2's turn and the current game board
                 System.out.println("----------------------------------------");
                 System.out.println(redText + "Player 2" + resetColor + "'s Turn");
                 board.PrintCurrentGameBoard();
+                // gets an address from the user where they want to play
                 String addressAsString = player2.GetInputFromUser().toLowerCase();
+                // handles invalid addresses entered
                 while ((player1.HasPlayedHere(addressAsString) || player2.HasPlayedHere(addressAsString)) || !board.GetIfAddressIsValid(addressAsString))
                 {
                     char firstChar = addressAsString.charAt(0);
@@ -70,7 +87,9 @@ public class TicTacToe {
                         addressAsString = player1.GetInputFromUser().toLowerCase();
                     }
                 }
+                // makes player 2 play at the address entered
                 player2.MakePlay(board.GetBoardAddressFromID(addressAsString));
+                // prints player 2 winning message and board
                 if (player2.CheckIfWon(board))
                 {
                     System.out.println("----------------------------------------");
@@ -78,6 +97,7 @@ public class TicTacToe {
                     board.PrintCurrentGameBoard();
                     System.out.println("----------------------------------------");
                 }
+                // prints tie message and board
                 else if (player1.GetNumberOfPlaysMade() + player2.GetNumberOfPlaysMade() == 9)
                 {
                     System.out.println("----------------------------------------");
