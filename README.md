@@ -12,9 +12,10 @@
 
 # Development Environment
 
-{Describe the tools that you used to develop the software}
+Language: Java version 8
+IDE: Visual Studio Code. 
+Source Control: Git (Github)
 
-{Describe the programming language that you used and any libraries.}
 
 # Useful Websites
 - [Oracle](https://www.oracle.com/java/technologies/downloads/)
@@ -26,11 +27,8 @@
 - [colored text (geeksforgeeks)](https://www.geeksforgeeks.org/how-to-print-colored-text-in-java-console/)
 - [freecodecamp](https://www.freecodecamp.org/news/java-static-keyword-explained/#:~:text=What%20does%20static%20mean%3F,be%20shared%20by%20all%20objects.)
 - [java input (javatpoint)](https://www.javatpoint.com/how-to-take-string-input-in-java#:~:text=Java%20nextLine()%20method,cursor%20to%20the%20next%20line.)
-- [try catch statements (w3schools)](https://www.w3schools.com/java/java_try_catch.asp)
 
 # Future Work
 - Change it so they can input "A1" or "1A"
-- Add color (green?) to the line that wins (possibly by changing the ID string in the BoardAddress)
-- Give each player a color as well (red/blue?)
 - Center the items in the terminal
 - Possibly clear the terminal with each new turn

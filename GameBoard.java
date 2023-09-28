@@ -57,6 +57,12 @@ public class GameBoard {
         return null;
     }
 
+    public void ChangeShownFromID(String id, String color, char playerSymbol)
+    {
+        BoardAddress address = GetBoardAddressFromID(id);
+        address.ChangeShown(playerSymbol, color);
+    }
+
     public Boolean GetIfAddressIsValid(String id)
     {
         for (BoardAddress boardAddress : _addresses) 

@@ -1,11 +1,13 @@
 public class BoardAddress {
     private String _id;
-    private char _shownValue;
+    private String _shownValue;
     private Boolean _isPlayed;
+
+    static String resetColor = "\u001B[0m";
 
     public BoardAddress(String id)
     {
-        _shownValue = ' ';
+        _shownValue = " ";
         _isPlayed = false;
         _id = id;
     }
@@ -15,7 +17,7 @@ public class BoardAddress {
         return _id;
     }
 
-    public char GetShownValue()
+    public String GetShownValue()
     {
         return _shownValue;
     }
@@ -25,9 +27,14 @@ public class BoardAddress {
         return _isPlayed;
     }
 
-    public void ChangeAddressValuesWhenPlayed(char playerSymbol)
+    public void ChangeShown(char playerSymbol, String playerColor)
     {
-        _shownValue = playerSymbol;
+        _shownValue = playerColor + playerSymbol + resetColor;
+    }
+
+    public void ChangeAddressValuesWhenPlayed(char playerSymbol, String playerColor)
+    {
+        ChangeShown(playerSymbol, playerColor);
         _isPlayed = true;
     }
 }
